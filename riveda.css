@@ -1,0 +1,210 @@
+.riveda-template {
+  --riveda-cor-bordas: #8f6e0d;
+  --riveda-cor-titulo: #fff;
+  --riveda-cor-texto: #ccc;
+  --riveda-cor-destaques: #8f6e0d;
+  --riveda-cor-destaques-2: #c96d5d;
+  --riveda-cor-bg-1: #2b2b2b;
+  --riveda-cor-bg-2: #1f1f1f;
+  --riveda-cor-botao: rgba(255, 255, 255, 0.05);
+  --riveda-cor-borda-botao: #444;
+  --riveda-gradiente-botao-hover: linear-gradient(
+    135deg,
+    #5c4706 0%,
+    #7c6529 50%,
+    #5c4706 100%
+  );
+  --riveda-cor-borda-botao-hover: #7c6529;
+  --riveda-cor-texto-botao-hover: #ccc;
+  background-color: black;
+  width: 550px;
+  margin: 30px auto;
+  outline: 1px solid #8f6e0d;
+  outline-offset: 10px;
+  padding-bottom: 5px;
+  box-sizing: border-box;
+}
+
+.riveda-header {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-color: var(--riveda-cor-bg-1);
+  border: 1px solid var(--riveda-cor-bordas);
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.riveda-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("https://i.imgur.com/yVrsPiR.jpeg") center/cover no-repeat;
+  filter: brightness(90%) blur(0.8px);
+  z-index: 1;
+}
+
+.riveda-title {
+  position: relative;
+  z-index: 2;
+  color: var(--riveda-cor-titulo);
+  font-family: 'Manufacturing Consent', serif;
+  font-weight: 400; 
+  font-size: 31px;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px clamp(10px, 2vw, 20px);
+  border-radius: 4px;
+  max-width: 80%;
+  word-break: break-word;
+  white-space: normal;
+}
+
+.riveda-meta {
+  align-items: center;
+  background-color: var(--riveda-cor-bg-2);
+  border: 1px solid var(--riveda-cor-bordas);
+  box-sizing: border-box;
+  color: #bbb;
+  display: flex;
+  font-family: "Sarala", sans-serif;
+  font-size: 13px;
+  justify-content: center;
+  line-height: 1.6;
+  margin: -35px auto 10px auto;
+  min-height: 65px;
+  padding: 10px 70px;
+  position: relative;
+  text-align: center;
+  width: 400px;
+  z-index: 2;
+}
+
+.riveda-meta div b {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: var(--riveda-cor-destaques)!important;
+  font-style: normal;
+  background: none;
+}
+
+.riveda-content {
+  background-color: var(--riveda-cor-bg-2);
+  border: 1px solid var(--riveda-cor-bordas);
+  margin: 30px;
+  padding: 10px 30px 30px;
+  white-space: pre-wrap;
+  text-align: justify;
+  line-height: 1.7;
+  color: var(--riveda-cor-texto);
+  position: relative;
+  z-index: 2;
+  font-family: "Sarala", sans-serif;
+  font-size: 13.5px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+
+.riveda-content p {
+font-size: 13.5px !important;
+}
+
+.riveda-content riv {
+  font-weight: bold;
+  font-size: 1em;
+  color: var(--riveda-cor-destaques);
+  font-style: normal;
+  background: none;
+}
+
+.riveda-content ti {
+  font-weight: bold;
+  font-size: 1em;
+  color: var(--riveda-cor-destaques-2);
+  font-style: normal;
+  background: none;
+}
+
+.riveda-header + .riveda-content {
+  margin-top: -50px;
+}
+
+.riveda-notification {
+  background-color: var(--riveda-cor-bg-1);
+  border: 1px solid var(--riveda-cor-bordas);
+  margin: 30px;
+  padding: 10px 30px;
+  border-radius: 4px;
+  font-family: "Sarala", sans-serif;
+  color: var(--riveda-cor-texto);
+  font-size: 14px !important;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+}
+
+.riveda-toggle {
+  display: none;
+}
+
+.riveda-toggle-label {
+  display: block;
+  background-color: var(--riveda-cor-botao);
+  border: 1px solid var(--riveda-cor-borda-botao);
+  color: var(--riveda-cor-texto);
+  padding: 6px 12px;
+  font-size: 12px !important;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  user-select: none;
+  transition: background-color 0.2s, color 0.2s;
+  box-sizing: border-box;
+}
+
+.riveda-toggle-label:hover {
+  background: var(--riveda-gradiente-botao-hover);
+  border-color: var(--riveda-cor-borda-botao-hover);
+  color: var(--riveda-cor-texto-botao-hover);
+  transition: background 0.4s ease, border-color 0.4s ease, color 0.4s ease,
+    text-shadow 0.4s ease;
+}
+
+.riveda-toggle-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+    padding 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+    margin-top 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  line-height: 1.6;
+  text-align: justify;
+  font-size: 12px !important;
+}
+
+.riveda-toggle:checked + .riveda-toggle-label + .riveda-toggle-content {
+  max-height: 500px;
+  padding: 10px 0;
+  margin-top: 10px;
+}
+
+.riveda-toggle-label::after {
+  content: "✉️"; /* envelope fechado */
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 18px !important;
+  vertical-align: middle;
+  transition: content 0.3s ease;
+}
+
+.riveda-toggle:checked + .riveda-toggle-label::after {
+  content: "💬";
+}
