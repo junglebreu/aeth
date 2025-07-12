@@ -45,7 +45,7 @@
   position: absolute;
   inset: 0;
   background: url("https://i.imgur.com/yVrsPiR.jpeg") center/cover no-repeat;
-  filter: brightness(90%) blur(0.8px);
+  filter: brightness(70%) blur(0.8px);
   z-index: 1;
 }
 
