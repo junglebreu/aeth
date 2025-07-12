@@ -4,6 +4,9 @@
   --riveda-cor-texto: #ccc;
   --riveda-cor-destaques: #8f6e0d;
   --riveda-cor-destaques-2: #c96d5d;
+  --riveda-cor-destaques-3: #66b2b2;
+  --riveda-cor-destaques-4: #c9df8a;
+  --riveda-cor-destaques-5: #be75be;
   --riveda-cor-bg-1: #2b2b2b;
   --riveda-cor-bg-2: #1f1f1f;
   --riveda-cor-botao: rgba(255, 255, 255, 0.05);
@@ -16,7 +19,6 @@
   );
   --riveda-cor-borda-botao-hover: #7c6529;
   --riveda-cor-texto-botao-hover: #ccc;
-  background-color: black;
   width: 550px;
   margin: 30px auto;
   outline: 1px solid #8f6e0d;
@@ -119,7 +121,6 @@ font-size: 13.5px !important;
 
 .riveda-content riv {
   font-weight: bold;
-  font-size: 1em;
   color: var(--riveda-cor-destaques);
   font-style: normal;
   background: none;
@@ -127,8 +128,30 @@ font-size: 13.5px !important;
 
 .riveda-content ti {
   font-weight: bold;
-  font-size: 1em;
   color: var(--riveda-cor-destaques-2);
+  font-style: normal;
+  background: none;
+}
+
+.riveda-content npcum {
+  font-weight: bold;
+  color: var(--riveda-cor-destaques-3);
+  font-style: normal;
+  background: none;
+}
+
+.riveda-content npcdois {
+  font-weight: bold;
+  font-size: 1em;
+  color: var(--riveda-cor-destaques-4);
+  font-style: normal;
+  background: none;
+}
+
+.riveda-content npctres {
+  font-weight: bold;
+  font-size: 1em;
+  color: var(--riveda-cor-destaques-5);
   font-style: normal;
   background: none;
 }
