@@ -107,7 +107,7 @@
   position: relative;
   z-index: 2;
   font-family: "Sarala", sans-serif;
-  font-size: 13.5px;
+  font-size: 13px;
   font-weight: 400;
   letter-spacing: 0.5px;
   word-spacing: 1px;
@@ -116,7 +116,7 @@
 }
 
 .riveda-content p {
-font-size: 13.5px !important;
+font-size: 13px !important;
 }
 
 .riveda-content riv {
