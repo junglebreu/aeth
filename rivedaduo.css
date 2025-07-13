@@ -47,6 +47,57 @@
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
+.riveda-icon-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url("https://i.imgur.com/jxlnSva.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.riveda-icon-3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url("https://i.imgur.com/HE0L74B.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.riveda-icon-4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url("https://i.imgur.com/HPqXutC.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
 .riveda-content-duo {
   background-color: var(--riveda-cor-bg-2);
   border: 1px solid var(--riveda-cor-bordas);
