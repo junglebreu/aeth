@@ -205,6 +205,7 @@ font-size: 13px !important;
 .riveda-toggle-content {
   max-height: 0;
   overflow: hidden;
+  overflow-y: auto;
   transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1),
     padding 0.6s cubic-bezier(0.4, 0, 0.2, 1),
     margin-top 0.6s cubic-bezier(0.4, 0, 0.2, 1);
@@ -217,8 +218,7 @@ font-size: 13px !important;
   max-height: 1000px;
   padding: 10px 0;
   margin-top: 10px;
-  overflow-y: auto;
-}
+  }
 
 .riveda-toggle-label::after {
   content: "✉️"; /* envelope fechado */
