@@ -214,7 +214,7 @@ font-size: 13px !important;
 }
 
 .riveda-toggle:checked + .riveda-toggle-label + .riveda-toggle-content {
-  max-height: 500px;
+  max-height: 1000px;
   padding: 10px 0;
   margin-top: 10px;
 }
